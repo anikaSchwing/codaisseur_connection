@@ -10,7 +10,6 @@
   <div class="student-footer">
     <div class="student-portfolio"><a href="<%= @student.portfolio_url %>">View <%= @student.name %>'s portfolio</a></div>
     <div class="student-availability">This student is <%= (@student.available ? "available" : "unavailable")%></div>
-    <div class="go-to-profile"><%= link_to "Find out more", student_path(@student) %></div>
   </div>
 
 </div>
