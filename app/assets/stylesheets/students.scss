@@ -1,3 +1,32 @@
 // Place all the styles related to the students controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+/* students */
+.students{
+  display:flex;
+  flex-direction: column;
+}
+.student{
+  background-color:#dddddd;
+  margin:20px;
+  display:flex;
+  align-items: center;
+}
+.student-img{
+  padding:30px;
+}
+.student-footer{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.learn-more{
+  color:white;
+  background-color: rgb(210, 47, 47);
+  border:none;
+  padding:15px 30px;
+  margin:10px;
+  text-align:center;
+  text-decoration: none;
+}
