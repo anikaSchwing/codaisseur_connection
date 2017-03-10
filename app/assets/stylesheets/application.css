@@ -58,3 +58,34 @@ body{
  div.header ul li{
    margin: 0 20px 0 0;
  }
+
+.batch-wrapper{
+  display:flex;
+}
+
+ .batch{
+    min-height: 300px;
+    width: 350px;
+    background-color: lightgrey;
+    margin: 0 20px;
+    padding: 20px 20px;
+    position: relative;
+ }
+
+ .batch img{
+   width: 320px;
+ }
+
+ .batch button{
+   padding: 10px;
+   background-color: #8c0000;
+   border-radius: 6px;
+   position: absolute;
+   right: 140px;
+ }
+
+ .batch button a{
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+  }
