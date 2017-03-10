@@ -1,0 +1,10 @@
+<h1>Students</h1>
+
+<% @students.each do |student| %>
+<p><%= student.name %></p>
+<p><%= student.image_url %></p>
+<p><%= student.portfolio_url %></p>
+<p><%= student.available %></p>
+<p><%= student.description %></p>
+<p><%= student.batch_id %></p>
+<% end %>

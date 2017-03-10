@@ -1,0 +1,22 @@
+<%= form_for @student do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+
+  <%= f.label :portfolio_url %>
+  <%= f.text_field :portfolio_url %>
+
+  <%= f.label :available %>
+  <%= f.check_box :available %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.label :batch_id %>
+  <%= f.collection_select(:batch_id, Batch.all, :id, :name) %>
+
+  <%= f.submit (@student.new_record? ? "Create" : "Update") %>
+
+  <% end %>
