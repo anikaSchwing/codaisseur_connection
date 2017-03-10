@@ -1,0 +1,10 @@
+<h1><%= @student.name %></h1>
+
+<p><%= @student.name %></p>
+<p><%= @student.image_url %></p>
+<p><%= @student.portfolio_url %></p>
+<p><%= @student.available %></p>
+<p><%= @student.description %></p>
+<p><%= @student.batch_id %></p>
+
+<%= link_to "Delete", student_path(@student.id), method: :delete, data: { confirm: "Are you sure?"} %>
