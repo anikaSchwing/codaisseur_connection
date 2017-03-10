@@ -13,3 +13,88 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin:0px;
+}
+
+h1.banner{
+  background-color: #8c0000;
+  color: white;
+  padding: 50px 20px;
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-size: 50px;
+}
+
+ div.header{
+  color: #8c0000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .header h1{
+   font-size: 30px;
+   background-color:white;
+   color: #8c0000;
+   padding: 5px 0px;
+   margin: 0px;
+ }
+
+ .header a{
+   text-decoration: none;
+   background-color: white;
+   padding:10px;
+   border-radius: 4px;
+   color: #8c0000;
+   text-transform: uppercase;
+   font-weight: bold;
+ }
+
+ .header a:hover{
+   color: white;
+   background-color: #5b0000;
+ }
+
+ div.header ul{
+   display: flex;
+   list-style: none;
+ }
+
+ div.header ul li{
+   margin: 0 20px 0 0;
+ }
+
+.batch-wrapper{
+  display:flex;
+}
+
+ .batch{
+    min-height: 300px;
+    width: 350px;
+    background-color: lightgrey;
+    margin: 0 20px 30px;;
+    padding: 20px;
+    position: relative;
+ }
+
+ .batch img{
+   width: 320px;
+ }
+
+ .batch button{
+   padding: 10px;
+   background-color: #8c0000;
+   border-radius: 6px;
+   position: absolute;
+   right: 140px;
+ }
+
+ .batch button a{
+      text-decoration: none;
+      color: white;
+      text-transform: uppercase;
+  }
