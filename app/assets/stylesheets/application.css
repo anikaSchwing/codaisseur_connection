@@ -85,7 +85,7 @@ h1.banner{
    width: 320px;
  }
 
- .batch button{
+ button{
    padding: 10px;
    background-color: #8c0000;
    border-radius: 6px;
@@ -97,4 +97,28 @@ h1.banner{
       text-decoration: none;
       color: white;
       text-transform: uppercase;
+  }
+
+  .batch-show{
+    display: flex;
+    background-color: lightgrey;
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .image{
+      display: block;
+      margin-right: 10px;
+  }
+
+  .batch-show img{
+      width: 300px;
+  }
+
+  .students_per_batch{
+    background-color: lightgrey;
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
   }

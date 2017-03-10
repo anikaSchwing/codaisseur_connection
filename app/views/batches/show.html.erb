@@ -1,15 +1,14 @@
 <!-- <p id="notice"><%= notice %></p> -->
-<div class="batch">
-  <%= image_tag @batch.image_url %>
-  <p>
-    <h1><%= @batch.name %></h1>
-    <h2>Description:</h2>
+<h1 class="banner"><%= @batch.name %></h1>
+<div class="batch-show">
+  <div class="image"><%= image_tag @batch.image_url %></div>
+  <div class="batch-description">
     <%= @batch.description %>
-  </p>
+  </div>
 </div>
 
 <div class="students_per_batch">
   <h2>Students:</h2>
   <%= render 'students' %>
-  
+
 </div>
