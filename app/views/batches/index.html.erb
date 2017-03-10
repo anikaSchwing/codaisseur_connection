@@ -3,7 +3,7 @@
 <% @batches.each do |batch| %>
   <div class="batch">
     <%= image_tag batch.image_url %>
-    <h3><%= batch.name %></h3>
+    <h3><%= link_to batch.name, batch_path(batch) %></h3>
     <p><%= batch.description %></p>
   </div>
 <% end %>
