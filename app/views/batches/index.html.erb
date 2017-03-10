@@ -1,5 +1,9 @@
 <h1> Batches </h1>
 
 <% @batches.each do |batch| %>
-  <%= batch.name %>
+  <div class="batch">
+    <%= image_tag batch.image_url %>
+    <h3><%= batch.name %></h3>
+    <p><%= batch.description %></p>
+  </div>
 <% end %>
