@@ -1,0 +1,17 @@
+<% @batch.students.each do |student| %>
+  <div class="student">
+    <div class="student-img"><img src="<%= student.image_url %>"/></div>
+    <div class="student-info">
+      <h3 class="student-name"><%= student.name %></h3>
+      <h4 class="student-batch">Studied in <%= student.batch.name %></div>
+      <!--<p class="student-description"><%= student.description %></p>-->
+    </div>
+    <hr>
+    <div class="student-footer">
+      <div class="student-portfolio"><a href="<%= student.portfolio_url %>">View <%= student.name %>'s portfolio</a></div>
+      <div class="student-availability">This student is <%= (student.available ? "available" : "unavailable")%></div>
+      <div class="go-to-profile"></div>
+    </div>
+
+</div>
+<% end %>
