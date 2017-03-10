@@ -1,2 +1,18 @@
 <!-- <p id="notice"><%= notice %></p> -->
-<h1><%= @batch.name %></h1>
+<div class="batch">
+  <%= image_tag @batch.image_url %>
+  <p>
+    <h1><%= @batch.name %></h1>
+    <h2>Description:</h2>
+    <%= @batch.description %>
+  </p>
+</div>
+
+<div class="students_per_batch">
+  <h2>Students:</h2>
+  <ul>
+  <% @batch.students.each do |student| %>
+    <li><%= image_tag student.image_url %><%= link_to student.name, student_path(student) %></li>
+  <% end %>
+</ul>
+</div>
