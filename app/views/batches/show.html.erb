@@ -10,9 +10,6 @@
 
 <div class="students_per_batch">
   <h2>Students:</h2>
-  <ul>
-  <% @batch.students.each do |student| %>
-    <li><%= image_tag student.image_url %><%= link_to student.name, student_path(student) %></li>
-  <% end %>
-</ul>
+  <%= render 'students' %>
+  
 </div>

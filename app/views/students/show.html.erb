@@ -7,4 +7,5 @@
 <p><%= @student.description %></p>
 <p><%= @student.batch_id %></p>
 
+<%= link_to "Edit", edit_student_path(@student.id) %>
 <%= link_to "Delete", student_path(@student.id), method: :delete, data: { confirm: "Are you sure?"} %>
