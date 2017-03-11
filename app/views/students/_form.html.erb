@@ -14,6 +14,12 @@
   <%= f.label :description %>
   <%= f.text_field :description %>
 
+  <%= f.label :linkedin_url %>
+  <%= f.text_field :linkedin_url %>
+
+  <%= f.label :github %>
+  <%= f.text_field :github %>
+
   <%= f.label :batch_id %>
   <%= f.collection_select(:batch_id, Batch.all, :id, :name) %>
 
