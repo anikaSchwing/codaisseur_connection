@@ -7,7 +7,11 @@
       <!--<p class="student-description"><%= student.description %></p>-->
     <hr>
     <div class="student-footer">
-      <div class="student-portfolio"><a href="<%= student.portfolio_url %>">View <%= student.name %>'s portfolio</a></div>
+      <ul>
+        <li><%= link_to "LinkedIn", student.linkedin_url %></li>
+        <li><%= link_to "Portfolio", student.portfolio_url %></li>
+        <li><%= link_to "GitHub", "https://github.com/#{student.github}" %></li>
+      </ul>
       <div class="student-availability">This student is <%= (student.available ? "available" : "unavailable")%></div>
       <div class="go-to-profile"><%= link_to "Find out more", student_path(student) %></div>
     </div>

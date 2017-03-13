@@ -5,10 +5,15 @@
     <h3 class="student-name"><%= @student.name %></h3>
     <h4 class="student-batch">Studied in <%= @student.batch.name %></div>
     <p class="student-description"><%= @student.description %></p>
-  </div>
   <hr>
   <div class="student-footer">
-    <div class="student-portfolio"><a href="<%= @student.portfolio_url %>">View <%= @student.name %>'s portfolio</a></div>
+    <div class="student-portfolio">
+      <ul>
+        <li><%= link_to "LinkedIn", @student.linkedin_url %></li>
+        <li><%= link_to "Portfolio", @student.portfolio_url %></li>
+        <li><%= link_to "GitHub", "https://github.com/#{@student.github}" %></li>
+      </ul>
+    </div>
     <div class="student-availability">This student is <%= (@student.available ? "available" : "unavailable")%></div>
   </div>
 
